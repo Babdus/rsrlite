@@ -1,0 +1,70 @@
+input[type="checkbox"] {
+  display: none;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 960px;
+}
+
+.wrap-collabsible {
+  margin: 1.2rem 0;
+}
+
+.lbl-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+.lbl-toggle:hover {
+  font-weight: bold;
+}
+
+.lbl-toggle::before {
+  content: " ";
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: 0.7rem;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(255, 191, 0, 0.2);
+  padding: 0.5rem 1rem;
+}
+
+.block {
+  padding-top: 1rem;
+}
+
+.material-image {
+  height: 480px;
+  display: flex;
+}
+
+.answer {
+  font-weight: bold;
+}
