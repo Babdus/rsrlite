@@ -75,5 +75,5 @@ input[type="checkbox"] {
 }
 
 .comment-image {
-  width: 100%;
+  height: min(480px, 45vh);
 }
