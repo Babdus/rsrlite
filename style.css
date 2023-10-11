@@ -43,7 +43,7 @@ input[type="checkbox"] {
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 350px;
+  max-height: 1080px;
 }
 
 .toggle:checked + .lbl-toggle {
@@ -58,7 +58,7 @@ input[type="checkbox"] {
 
 .block {
   padding-top: 1rem;
-  min-height: 20vh;
+  min-height: 100vh;
 }
 
 .material-image {
@@ -68,4 +68,12 @@ input[type="checkbox"] {
 
 .answer {
   font-weight: bold;
+}
+
+.comment-image-wrapper {
+  max-width: 480px;
+}
+
+.comment-image {
+  width: 100%;
 }
